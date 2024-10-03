@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+            background: url(/mario\ background.jpeg) no-repeat;
+            background-size: 100% 100%;
+            overflow:hidden;
+        }
+        div{
+            position: absolute;
+            bottom:30px;
+            height:120px;
+            width:120px;
+            background: url(mar-removebg-preview.png)no-repeat;
+            background-size: 100% 100%;
+            animation:run1 1s linear infinite,run2 10s linear infinite;    
+        }
+        @keyframes run1{
+            0%{
+                background:url(mar1-removebg-preview.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            20%{
+                background: url(mar2-removebg-preview.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            40%{
+                background: url(mar-removebg-preview.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            60%{
+                background: url(mar1-removebg-preview.png) no-repeat;
+                background-size: 100% 100%;
+
+            }
+            80%{
+                background: url(mar2-removebg-preview.png) no-repeat;
+                background-size: 100% 100%;
+
+            }
+            100%{
+
+            }
+        
+        }
+        @keyframes run2{
+            0%{
+                left:0%;
+            }
+            100%{
+                left:100%
+            }
+        }
+
+            
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
